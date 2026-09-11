@@ -38,7 +38,7 @@ We have increased our campaigning among the new middle class. [? if socialism <=
 
 @old_middle
 subtitle: -2 resources
-choose-if: resources >= 1
+choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 on-arrival: old_middle_spd += 5*(1-dissent); resources -= 1; old_middle_spd -= 3 if nationalism >= 51 and peoples_party == 0; peoples_party_support += 1
 
