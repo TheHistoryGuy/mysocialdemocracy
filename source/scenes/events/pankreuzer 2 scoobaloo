@@ -11,9 +11,9 @@ new-page: true
 
 wow, we need to make another panzerkreuzer fast! our base is fucking pissed but oh well
 
-- @vote_yes: Vote yes, for constructing the battlecruiser (wow).
-- @vote_no: Vote no, against constructing the battlecruiser (commie).
-- @abstain: Abstain from the vote (centrist).
+- @vote_yes: Vote yes, for constructing the battlecruiser wow.
+- @vote_no: Vote no, against constructing the battlecruiser commie.
+- @abstain: Abstain from the vote centrist.
 
 @vote_yes
 on-arrival: left_dissent += 10; labor_dissent += 5; center_dissent += 5; reformist_dissent += 5; neorevisionist_dissent += 5; panzerkreuzer_funded = 1; kpd_coalition_dissent += 1; kpd_relation -= 6; workers_spd += 8
