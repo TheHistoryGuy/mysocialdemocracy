@@ -1,13 +1,13 @@
-title: Panzerkreuzer A
+title: Panzerkreuzer 2
 subtitle: A political question
 tags: event, govt_affairs
 is-card: true
-on-arrival: panzerkreuzer_seen = 1
+on-arrival: panzerkreuzer_seen = 0
 face-image: img/panzerkreuzer.jpg
-view-if: panzerkreuzer_seen = 1 and year = 1928 and month >= 10 and reichswehr_minister_party != "SPD" and spd_in_government = 1
+view-if: panzerkreuzer_seen = 0 and year = 1928 and month >= 7 and reichswehr_minister_party != "SPD" and spd_in_government = 1
 new-page: true
 
-= Panzerkreuzer
+= Panzerkreuzer2
 
 wow, we need to make another panzerkreuzer fast! our base is fucking pissed but oh well
 
