@@ -4,7 +4,7 @@ tags: event, govt_affairs
 is-card: true
 on-arrival: panzerkreuzer_seen = 0
 face-image: img/panzerkreuzer.jpg
-view-if:  spd_in_government = 1
+view-if:  spd_in_government = 1 and year = 1928 and month = 10
 new-page: true
 
 = Panzerkreuzer2
