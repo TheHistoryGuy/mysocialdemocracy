@@ -414,6 +414,20 @@ go-to: advisor_menu
 
 Otto Braun is now an advisor.
 
+
+@add_gessler
+title: Otto Gessler
+subtitle: Otto Gessler is a liberal reichswehr minister who loves militarism. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
+is-card: true
+card-image: Bundesarchiv_Bild_146-1968-100-04A,_Otto_Karl_Geßler.jpg
+tags: reformist_advisor
+view-if: gessler_advisor = 0 and n_advisors < 3
+on-arrival: gessler_advisor = 1; n_advisors += 1; reformist_strength += 5
+go-to: advisor_menu
+
+Otto Gessler is now an advisor.
+
+
 @add_juchacz
 title: Marie Juchacz
 subtitle: Marie Juchacz is the founder of Worker's Welfare, a mutual-aid organization. {!<br><br>!}[? if difficulty < 0 : Actions - Emergency Fundraising, Worker's Welfare, Organizing Women ?]
