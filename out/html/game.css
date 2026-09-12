@@ -559,12 +559,12 @@ table {
     fill: #8B0000;
 }
 .seat.spd {
-    fill: #E3000F;
+    fill: #DCCA4A;
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
 .seat.ddp {
-    fill: #DCCA4A;
+    fill: #E3000F;
 }
 .seat.z {
     fill: #000;
