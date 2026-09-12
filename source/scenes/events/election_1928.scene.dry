@@ -202,14 +202,14 @@ if (Q.sapd_formed && Q.sapd_r) {
 data = data.concat([
     {
         "id": "spd",
-        "legend": "SPD",
-        "name": "SPD",
+        "legend": "DDP",
+        "name": "DDP",
         "seats": Math.round(Q.spd_r*5),
     },
     {
         "id": "ddp",
-        "legend": Q.ddp_name,
-        "name": Q.ddp_name,
+        "legend": "SPD",
+        "name": "SPD",
         "seats": Math.round(Q.ddp_r*5),
     },
     {
