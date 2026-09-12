@@ -2,10 +2,10 @@ title: Otto Gessler
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/BraunOtto.jpg
-view-if: braun_advisor = 1
+view-if: gessler_advisor = 1
 new-page: true 
 
-= Otto Braun
+= Otto Gessler
 
 Braun [? if spd_prussia = 1 : is ?][? if spd_prussia = 0 : was ?] the Minister-President of Prussia, the largest state in Germany. He is a reformist leader who seeks to work with the bourgeois parties.
 
