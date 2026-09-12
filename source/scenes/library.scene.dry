@@ -353,18 +353,20 @@ if (Q.sapd_formed && Q.sapd_r) {
             });
 }
 data = data.concat([
-    {
-        "id": "spd",
-        "legend": "DDP",
-        "name": "DDP",
-        "seats": Q.spd_r*5,
-    },
-    {
+     {
         "id": "ddp",
         "legend": "SPD",
         "name": "SPD",
         "seats": Q.ddp_r*5,
     },
+
+{
+        "id": "spd",
+        "legend": "DDP",
+        "name": "DDP",
+        "seats": Q.spd_r*5,
+    },
+  
     {
         "id": "z",
         "legend": "Center",
