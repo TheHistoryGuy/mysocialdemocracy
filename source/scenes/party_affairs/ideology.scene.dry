@@ -50,7 +50,7 @@ if (Q.ideology && Q.ideology != "socrep") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "socrep"; socrep_strength += 10; wtb_support += 1; socrep_dissent -= 10; liberal;_dissent -= 5; soclib_dissent -= 5; kpd_relation -= 3
+on-departure: ideology = "socrep"; socrep_strength += 10; wtb_support += 1; socrep_dissent -= 10; liberal_dissent -= 5; soclib_dissent -= 5; kpd_relation -= 3
 
 The Social Republicans seek to continue the parties course down the middle road, compromising betweeen both the Classical Liberals and Social Liberals.
 
