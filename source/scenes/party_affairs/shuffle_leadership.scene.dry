@@ -21,7 +21,7 @@ Removing advisors will increase dissent from their faction of the party, while s
 
 @rm_main
 title: Remove advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor 
+tags: unionist_advisor, soclib_advisor, liberal_advisor, socrep_advisor, neorev_advisor, nonfactional_advisor 
 frequency: 1
 
 - #remove_advisor
@@ -71,7 +71,7 @@ go-to: rm_main
 Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 
 
-# reformists
+# liberal
 
 
 @remove_gessler
@@ -120,7 +120,7 @@ go-to: rm_main
 Pfülf has been removed as an advisor. The Reformist faction disapproves.
 
 
-# labor
+# socrep
 
 @remove_leipart
 title: Remove Leipart
@@ -159,7 +159,7 @@ go-to: rm_main
 
 Woytinsky has been removed as an advisor. The Labor faction disapproves.
 
-# left
+# soclib
 
 @remove_levi
 title: Remove Levi
@@ -296,38 +296,38 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor
+tags: unionist_advisor, soclib_advisor, liberal_advisor, socrep_advisor, neorev_advisor, nonfactional_advisor
 frequency: 1
 
 
-- @centrist: Add Centrists
-- @left: Add Leftists
-- @reformist: Add Reformists
-- @labor: Add Labor
+- @unionist: Add Unionists
+- @soclib: Add Social Liberals
+- @liberal: Add Classical Liberals
+- @socrep: Add Social Republicans
 - @neorev: Add Neorevisionists
 - @nonfactional: Add non-factional advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
 
-@centrist
+@unionist
 view-if: n_advisors < 3
 
-- #center_advisor
+- #unionist_advisor
 
-@reformist
+@liberal
 view-if: n_advisors < 3
 
-- #reformist_advisor
+- #liberal_advisor
 
-@left
+@soclib
 view-if: n_advisors < 3
 
-- #left_advisor
+- #soclib_advisor
 
-@labor
+@socrep
 view-if: n_advisors < 3
 
-- #labor_advisor
+- #socrep_advisor
 
 @neorev
 view-if: neorevisionism > 0 and n_advisors < 3
@@ -420,7 +420,7 @@ title: Otto Gessler
 subtitle: Otto Gessler is a liberal reichswehr minister who loves militarism. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Negotiating with the Coalition ?]
 is-card: true
 card-image: Bundesarchiv_Bild_146-1968-100-04A,_Otto_Karl_Geßler.jpg
-tags: reformist_advisor
+tags: liberal_advisor
 view-if: gessler_advisor = 0 and n_advisors < 3
 on-arrival: gessler_advisor = 1; n_advisors += 1; reformist_strength += 5
 go-to: advisor_menu
