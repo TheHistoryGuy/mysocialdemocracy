@@ -200,7 +200,13 @@ if (Q.sapd_formed && Q.sapd_r) {
             });
 }
 data = data.concat([
-    {
+ {
+        "id": "uspd",
+        "legend": "USPD",
+        "name": "USPD",
+        "seats": Math.round(Q.uspd_r*5),
+
+{
         "id": "spd",
         "legend": "DDP",
         "name": "DDP",
@@ -280,6 +286,8 @@ go-to: coalition_menu
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}KPD: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#F36196'> </div> !}USPD: {!</td><td>!} [+ uspd_r +]% {!</td><td>!} [+ str_change_uspd +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#E3000F'> </div> !} SPD: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
 
