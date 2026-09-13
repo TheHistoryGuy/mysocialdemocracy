@@ -557,15 +557,20 @@ table {
 /* Styles for parties */
 .seat.kpd {
     fill: #8B0000;
+
+  }
+.seat.uspd {
+    fill: #F36196;
+}
+.seat.ddp {
+    fill: #E3000F;
 }
 .seat.spd {
     fill: #DCCA4A;
     stroke: var(--border-color);
     stroke-width: 1.5px;
 }
-.seat.ddp {
-    fill: #E3000F;
-}
+
 .seat.z {
     fill: #000;
 }
