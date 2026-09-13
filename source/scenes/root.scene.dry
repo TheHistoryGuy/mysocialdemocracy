@@ -240,7 +240,7 @@ Q.sapd_formed = 0;
 // they don't have to sum to 100 since the electoral calculations will be normalized.
 Q.workers_spd = 7;
 Q.workers_kpd = 0;
-Q.workers_uspd = 15;
+Q.workers_uspd = 10;
 Q.workers_z = 10;
 Q.workers_ddp = 65;
 Q.workers_dvp = 0;
@@ -253,8 +253,8 @@ Q.old_middle_kpd = 0;
 Q.old_middle_uspd = 0;
 Q.old_middle_z = 5;
 Q.old_middle_ddp= 5;
-Q.old_middle_dvp = 10;
-Q.old_middle_dnvp = 10;
+Q.old_middle_dvp = 7;
+Q.old_middle_dnvp = 8;
 Q.old_middle_nsdap = 0;
 Q.old_middle_other = 2;
 
@@ -263,8 +263,8 @@ Q.new_middle_kpd = 0;
 Q.new_middle_uspd = 2;
 Q.new_middle_z = 10;
 Q.new_middle_ddp = 15;
-Q.new_middle_dvp = 10;
-Q.new_middle_dnvp = 10;
+Q.new_middle_dvp = 7;
+Q.new_middle_dnvp = 5;
 Q.new_middle_nsdap = 0;
 Q.new_middle_other = 2;
 
@@ -280,7 +280,7 @@ Q.rural_other = 3;
 
 Q.unemployed_spd = 10;
 Q.unemployed_kpd = 0;
-Q.unemployed_uspd = 35;
+Q.unemployed_uspd = 25;
 Q.unemployed_z = 1;
 Q.unemployed_ddp = 25;
 Q.unemployed_dvp = 0;
