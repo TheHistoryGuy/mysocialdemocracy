@@ -4,7 +4,7 @@ view-if: fundraising_timer <= 0 and (not historical_mode)
 on-arrival: fundraising_timer = 6; month_actions += 1
 frequency: 300
 is-card: true
-card-image: img/poster_2.jpg
+card-image: 4.Grosse.webp
 tags: party_affairs
 
 = Fundraising
@@ -14,6 +14,7 @@ To operate, the DDP needs money, something we usually lack.
 - @maintain: Maintain our current dues.
 - @reduce: Reduce dues.
 - @increase: Increase dues.
+- @industrial: Seek funding from industrialists.
 
 @maintain
 subtitle: [+ dues +] resources gained.
@@ -37,3 +38,9 @@ Our members grumble at this, and some of the less committed members leave. But n
 
 [? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?]
 
+
+@industrial
+subtitle: 4 resources gained. [? Doing this will require concessions to the Industrialists, which will cause backlash within the party. ?]
+on-arrival: resources += 4; soclib_dissent += 20; unionist_dissent += 20; socrep_dissent += 15; industrial_strength += 15
+
+We get a good amount of money from German Industrialists, but the left and center of the party are infuriated at the concessions we have made.
