@@ -12,7 +12,7 @@ max-visits: 30
 
 The DDP prides itself as a stable, governing, democratic party. However, if we do not have sufficient relations with other parties we cannot govern.
 
-- @liberals: Strengthen our bonds with the German Peoples Party. 
+- @liberals: Strengthen our bonds with the German Peoples Party (DVP). 
 - @center: Strengthen our bonds with the Catholic Center Party.
 - @socialist: Work towards further cooperation with the Socialist party(s).
 - @dnvp: Attempt to repair our relations with the right-wing DNVP.
@@ -52,7 +52,6 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
-
 go-to: dnvp_1
 
 @dnvp_1
@@ -65,7 +64,6 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1
-
 go-to: dvp_stresemann
 
 @dvp_stresemann
