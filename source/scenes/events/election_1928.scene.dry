@@ -658,15 +658,15 @@ Now, we have a new grand coalition, a "Constitutional Coalition" of all the non-
 Who should be chancellor?
 
 - @join_bruning: For better or for worse, it must be Heinrich Brüning of the Center.
-- @braun_chancellor_new: Otto Braun for Chancellor?
+- @Koch_chancellor_new: Erich Koch for Chancellor?
 
-@braun_chancellor_new
+@Koch_chancellor_new
 subtitle: This will reduce our leverage in the ministries.
 view-if: not historical_mode or not spd_prussia
-on-arrival: leverage -= 10; chancellor = "Braun"; chancellor_party = "SPD"
+on-arrival: leverage -= 15; chancellor = "Koch"; chancellor_party = "DDP"
 go-to: ministries
 
-We have assembled a new coalition under Otto Braun.
+We have assembled a new coalition under Erich Koch.
 
 
 @unity_government
@@ -969,7 +969,7 @@ We have enough votes to form a "Center Coalition" government consisting of the D
 Who should be the chancellor?
 
 - @muller
-- @braun
+- @Koch
 - @breitscheid_coalition_chancellor
 - @wels
 - @z_chancellor
@@ -1155,7 +1155,7 @@ As expected, the SPD is the largest party, and this time, we are expected to tak
 Who should be the chancellor?
 
 - @muller
-- @braun
+- @koch
 - @wels
 - @z_chancellor
 - @z_chancellor_wirth
@@ -1180,21 +1180,21 @@ go-to: ministries
 
 Otto Wels's appointment as chancellor is approved by our potential allies.
 
-@braun
-title: Otto Braun for Chancellor
+@koch
+title: Erich Koch for Chancellor
 view-if: not historical_mode or not spd_prussia
-subtitle: Braun is currently the Minister-President of Prussia, and is one of our most popular leaders. However, other parties may have qualms about concentrating too much power in one man.
+subtitle: Koch is currently the Minister-President of Prussia, and is one of our most popular leaders. However, other parties may have qualms about concentrating too much power in one man.
 
-The Center party has significant qualms about appointing Braun as chancellor, given that he is already Minister-President of Prussia. They ask for either more cabinet positions, or for Braun to resign his state government role. The latter is completely unacceptable.
+The Center party has significant qualms about appointing Koch as chancellor, given that he is already Minister-President of Prussia. They ask for either more cabinet positions, or for Braun to resign his state government role. The latter is completely unacceptable.
 
 - @muller
 - @wels
-- @braun_2: Let the Center have their cabinet positions.
+- @koch_2: Let the Center have their cabinet positions.
 
-@braun_2
+@koch_2
 subtitle: Otto Braun will be Chancellor.
 view-if: not historical_mode
-on-arrival: spd_in_government = 1; chancellor = "Braun"; chancellor_party = "SPD"; leverage -= 10; in_grand_coalition = 1 if in_weimar_coalition == 0
+on-arrival: spd_in_government = 1; chancellor = "Koch"; chancellor_party = "DDP"; leverage -= 15; in_grand_coalition = 1 if in_weimar_coalition == 0
 go-to: ministries
 
 We have promised to let the Center have more influence in the government in response to the appointment of Braun as chancellor.
@@ -1229,7 +1229,7 @@ on-arrival: reformist_dissent += 5; center_dissent += 5; labor_dissent += 5; neo
 Are we sure about not participating in government? This will cause significant internal dissent, and will lead to increased distrust from the bourgeois parties. Even debating this option causes internal backlash. In addition, it is possible that the bourgeois and right-wing parties will also be unable to form a coalition government, leading to a regime appointed by President [+ president +].
 
 - @muller
-- @braun
+- @koch
 - @z_chancellor
 - @no_govt_goals: Yes, we're sure.
 
