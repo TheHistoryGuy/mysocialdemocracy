@@ -172,9 +172,9 @@ if (Q.gedag_membership) {
 
 = Unions
 
-{!<span class="tooltip-text" title="The GDAAB are our unions, they generally consist of Civil Servants and white collar workers.">GDAAB</span>!} Membership: [+ gdaab_membership_2 +] thousand
+{!<span class="tooltip-text" title="The Hirsch-Dunckers are our unions, they generally consist of Civil Servants and white collar workers.">Hirsch-Duncker</span>!} Membership: [+ gdaab_membership_2 +] thousand
 
-GDAAB Activism: [+ gdaab_activism : activism +]
+Hirsch-Duncker Activism: [+ gdaab_activism : activism +]
 
 {!<span class="tooltip-text" title="The ADGB are the left wing unions, they affiliate with the SPD.">ADGB</span>!} Membership: [+ adgb_membership_2 +] thousand
 
