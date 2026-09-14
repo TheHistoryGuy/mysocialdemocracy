@@ -166,13 +166,13 @@ Q.reichswehr_loyalty = 0.2;
 
 
 //union stats
-Q.gdaab_membership = 200;
+Q.gdaab_membership = 190;
 Q.gdaab_activism = 0.5;
-Q.gcg_membership = 1100;
+Q.gcg_membership = 1050;
 Q.gcg_activism = 0.6;
 Q.gedag_membership = 100;
 Q.gedag_activism = 0.3;
-Q.adgb_membership = 100;
+Q.adgb_membership = 7300;
 Q.adgb_activism = 0.8;
 
 // The state of the country
