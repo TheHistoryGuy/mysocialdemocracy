@@ -658,9 +658,9 @@ Now, we have a new grand coalition, a "Constitutional Coalition" of all the non-
 Who should be chancellor?
 
 - @join_bruning: For better or for worse, it must be Heinrich Brüning of the Center.
-- @Koch_chancellor_new: Erich Koch for Chancellor?
+- @koch_chancellor_new: Erich Koch for Chancellor?
 
-@Koch_chancellor_new
+@koch_chancellor_new
 subtitle: This will reduce our leverage in the ministries.
 view-if: not historical_mode or not spd_prussia
 on-arrival: leverage -= 15; chancellor = "Koch"; chancellor_party = "DDP"
@@ -969,7 +969,7 @@ We have enough votes to form a "Center Coalition" government consisting of the D
 Who should be the chancellor?
 
 - @muller
-- @Koch
+- @koch
 - @breitscheid_coalition_chancellor
 - @wels
 - @z_chancellor
