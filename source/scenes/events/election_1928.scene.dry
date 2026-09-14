@@ -1384,7 +1384,7 @@ This coalition arrangement is tolerable to all.
 @drop_labor
 title: Drop the Labor Ministry.
 view-if: labor_minister_party = "DDP"
-on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 5;
+on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1405,14 +1405,14 @@ go-to: ministries
 @drop_economic
 title: Drop the Economic Ministry.
 view-if: economic_minister_party = "DDP"
-on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = ddp_name if in_weimar_coalition or in_popular_front; economic_minister = "Dietrich" if in_weimar_coalition or in_popular_front;
+on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = 'Z' if in_weimar_coalition or in_popular_front; economic_minister = "Brauns" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = "DDP"
-on-arrival: justice_minister_party = "DDP"; justice_minister = "Koch-Weser"; leverage += 10;
+on-arrival: justice_minister_party = "Z"; justice_minister = "Wilhelm Marx"; leverage += 8;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1433,6 +1433,6 @@ go-to: ministries
 @drop_reichswehr
 title: Drop the Reichswehr Ministry.
 view-if: reichswehr_minister_party = "DDP"
-on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 15;
+on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 5;
 tags: drop_mins_1928
 go-to: ministries
