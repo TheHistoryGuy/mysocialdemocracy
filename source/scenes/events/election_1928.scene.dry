@@ -975,14 +975,6 @@ Who should be the chancellor?
 - @z_chancellor
 - @z_chancellor_wirth
 
-@breitscheid_coalition_chancellor
-title: Rudolf Breitscheid for Chancellor
-subtitle: Breitscheid is viewed as friendlier towards the left of the SPD.
-view-if: year >= 1930
-on-arrival: chancellor = "Breitscheid"; chancellor_party = "SPD";
-go-to: ministries
-
-Rudolf Breitscheid has been appointed chancellor.
 
 
 @grand_coalition
