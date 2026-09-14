@@ -164,6 +164,17 @@ Q.reichswehr_strength = 100;
 Q.reichswehr_militancy = 5;
 Q.reichswehr_loyalty = 0.2;
 
+
+//union stats
+Q.gdaab_membership = 100;
+Q.rb_activism = 0.5;
+Q.gcg_membership = 100;
+Q.gcg_activism = 0.5;
+Q.gedag_membership = 100;
+Q.gedag_activism = 0.5;
+Q.adgb_membership = 100;
+Q.adgb_activism = 0.5;
+
 // The state of the country
 
 // popular opinion
