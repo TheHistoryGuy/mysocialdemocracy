@@ -100,6 +100,7 @@ if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
 
 // coalitions
 Q.weimar_coalition = Q.ddp_r + Q.spd_r + Q.z_r - 3;
+Q.center_coalition = + Q.spd_r + Q.z_r + Q.dvp_r + Q.other_r;
 Q.grand_coalition = Q.ddp_r + Q.spd_r + Q.z_r + Q.dvp_r;
 Q.bourgeois_coalition = Q.spd_r + Q.z_r + Q.dvp_r + Q.other_r;
 Q.center_right_coalition = Q.z_r + Q.spd_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
@@ -309,6 +310,8 @@ go-to: coalition_menu
 
 Weimar Coalition (SPD + Z + [+ ddp_name +]): [+ weimar_coalition +]%
 
+Center Coalition (DDP + Z + BVP + DVP + Other: [+ center_coalition +]%
+
 Grand Coalition (SPD + Z + BVP + [+ ddp_name +] + DVP): [+ grand_coalition +]%
 
 Bourgeois Coalition (Z + BVP + [+ ddp_name +] + DVP + Others): [+ bourgeois_coalition +]%
@@ -325,6 +328,7 @@ There are some potential coalition arrangements.
 
 - @spd_majority
 - @weimar_coalition
+- @center_coalition
 - @grand_coalition
 - @new_grand_coalition
 - @unity_government
@@ -935,6 +939,32 @@ on-arrival: leverage += 5; leverage += 5 if z_party_leader == "Joos"; in_weimar_
 achievement: weimar_coalition
 
 We have enough votes to form a "Weimar Coalition" government consisting of the SPD, Center (Z) and Democratic ([+ ddp_name +]) parties! This has been our preferred governing coalition since 1919.
+
+Who should be the chancellor?
+
+- @muller
+- @braun
+- @breitscheid_coalition_chancellor
+- @wels
+- @z_chancellor
+- @z_chancellor_wirth
+
+@breitscheid_coalition_chancellor
+title: Rudolf Breitscheid for Chancellor
+subtitle: Breitscheid is viewed as friendlier towards the left of the SPD.
+view-if: year >= 1930
+on-arrival: chancellor = "Breitscheid"; chancellor_party = "SPD";
+go-to: ministries
+
+Rudolf Breitscheid has been appointed chancellor.
+
+@center_coalition
+title: We can form a Center Coalition.
+subtitle: DDP + Z + BVP + DVP + Others ([+ center_coalition +]%)
+view-if: center_coalition >= 50
+on-arrival: leverage += 5; in_center_coalition = 1; spd_in_government = 1; in_popular_front = 0; in_left_front = 0; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DVP"; finance_minister_party = "Other"; agriculture_minister_party = "Z"; foreign_minister = "Stresemann"; interior_minister = "Wirth"; justice_minister = "Wilhelm Marx"; labor_minister = "Stegerwald"; reichswehr_minister = "Groener"; economic_minister = "Moldenhauer"; finance_minister = "Drewitz"; agriculture_minister = "Hermes";
+
+We have enough votes to form a "Center Coalition" government consisting of the DDP, Center (Z), BVP and DVP parties! This has always been our preferred coalition.
 
 Who should be the chancellor?
 
