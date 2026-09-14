@@ -172,19 +172,19 @@ if (Q.gedag_membership) {
 
 = Unions
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Membership: [+ gdaab_membership_2 +] thousand
+{!<span class="tooltip-text" title="The GDAAB are our unions, they generally consist of Civil Servants and white collar workers.">GDAAB</span>!} Membership: [+ gdaab_membership_2 +] thousand
 
 GDAAB Activism: [+ gdaab_activism : activism +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Membership: [+ adgb_membership_2 +] thousand
+{!<span class="tooltip-text" title="The ADGB are the left wing unions, they affiliate with the SPD.">ADGB</span>!} Membership: [+ adgb_membership_2 +] thousand
 
 ADGB Activism: [+ adgb_activism : activism +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Membership: [+ cgc_membership_2 +] thousand
+{!<span class="tooltip-text" title="The GcG are the Christian unions, they affiliate heavily with Z.">GcG</span>!} Membership: [+ gcg_membership_2 +] thousand
 
 GcG Activism: [+ gcg_activism : activism +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Membership: [+ gedag_membership_2 +] thousand
+{!<span class="tooltip-text" title="The GEDAG are the right wing unions, dominated by the DVP and DNVP.">GEDAG</span>!} Membership: [+ gedag_membership_2 +] thousand
 
 GEDAG Activism: [+ gedag_activism : activism +]
 
