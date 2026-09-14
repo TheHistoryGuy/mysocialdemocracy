@@ -154,6 +154,44 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
+@unions
+on-arrival: {!
+if (Q.gdaab_membership) {
+    Q.gdaab_membership_2 = Q.gdaab_membership.toFixed(1);
+}
+if (Q.adgb_membership) {
+    Q.adgb_membership_2 = Q.adgb_membership.toFixed(1);
+}
+if (Q.gcg_membership) {
+    Q.gcg_membership_2 = Q.gcg_membership.toFixed(1);
+}
+if (Q.gedag_membership) {
+    Q.gedag_membership_2 = Q.gedag_membership.toFixed(1);
+}
+!}
+
+= Unions
+
+{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Membership: [+ gdaab_membership_2 +] thousand
+
+GDAAB Activism: [+ gdaab_activism : activism +]
+
+{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Membership: [+ adgb_membership_2 +] thousand
+
+ADGB Activism: [+ adgb_activism : activism +]
+
+{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Membership: [+ cgc_membership_2 +] thousand
+
+GcG Activism: [+ gcg_activism : activism +]
+
+{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Membership: [+ gedag_membership_2 +] thousand
+
+GEDAG Activism: [+ gedag_activism : activism +]
+
+
+
+
+
 @polls
 on-arrival: {!
 Q.pro_republic_disp = Math.round(Q.pro_republic);
