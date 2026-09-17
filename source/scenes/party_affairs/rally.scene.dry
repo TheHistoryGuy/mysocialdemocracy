@@ -91,15 +91,15 @@ on-arrival: workers_spd += 1*(1-dissent); new_middle_spd += 4*(1-dissent); union
 Union leaders are grateful at our reassurance of our commitment to the cause, the new middle class as a whole is also very appreciative.
 
 @democracy
-on-arrival: workers_spd += 1*(1-dissent); new_middle_spd += 3*(1-dissent); rural_spd += 1*(1-dissent); if pro_republic >= 60: old_middle_spd += 4; if pro_republic >= 60: new_middle_spd += 4;
+on-arrival: workers_spd += 1*(1-dissent); new_middle_spd += 3*(1-dissent); rural_spd += 1*(1-dissent); old_middle_spd += 4 if pro_republic >= 60; new_middle_spd += 4 if pro_republic >= 60;
 
 Of course we shall defend democracy! Our speakers rail against the communists, monarchists, and all other authoritarians who oppose the republic.
 
-[? pro_republic >= 60 : Due to the widespread popularity of the republic, our message resonations rather well with the middle classes. ?]
-[? pro_republic < 60 : We are able to rally our base, however, the low support of the republic makes expanding further much harder. ?]
+[? if pro_republic >= 60 : Due to the widespread popularity of the republic, our message resonations rather well with the middle classes. ?]
+[? if pro_republic < 60 : We are able to rally our base, however, the low support of the republic makes expanding further much harder. ?]
 
 @pacifism
-on-arrival: nationalism -= 2*(1 - dissent); liberal_dissent += 3; soclib_dissent -= 4; workers_spd += 2*(1 - dissent); old_middle_spd -= 3;  if soclib_strength > liberal_strength: worker_spd += 2*(1-dissent); if soclib_strength > liberal_strength:  new_middle_spd += 2*(1-dissent); 
+on-arrival: nationalism -= 2*(1 - dissent); liberal_dissent += 3; soclib_dissent -= 4; workers_spd += 2*(1 - dissent); old_middle_spd -= 3;  worker_spd += 2*(1-dissent) if soclib_strength > liberal_strength; new_middle_spd += 2*(1-dissent) if soclib_strength > liberal_strength; 
 
 Many of our speakers denounce the military establishment, opposing further autonomy for the reichswehr.
 
