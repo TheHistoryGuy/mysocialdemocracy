@@ -4,7 +4,7 @@ is-card: true
 tags: party_affairs
 view-if: rally_timer <= 0
 on-arrival: month_actions += 1; rally_timer = 6
-card-image: img/protest.jpg
+card-image: pl007162.webp
 go-to: main_rally; sa_disrupt if sa_strength > 180 and not sa_banned and not return_to_normalcy
 
 @sa_disrupt
@@ -72,39 +72,39 @@ The SA have won this show of strength.
 
 Mass rallies are a common feature of social democratic life, especially in the lead-up to an election. What is the primary theme of this rally?
 
-- @class_struggle: The class struggle of the proletariat against the bourgeoisie.
-- @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against dictatorship and fascism.
-- @pacifism: Opposing war, nationalism, and militarism at all costs.
+- @class_struggle: Expanding the free market and slashing regulation should be our top priority.
+- @welfare: The Defense of the rights of white collar unions, alongside better treatment for the civil service.
+- @democracy: Defending our liberal democracy against both the communists and fascists.
+- @pacifism: Opposing war, nationalism, militarism, and the German right at all costs.
 - @wtb: Support the WTB plan!
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
 @class_struggle
-on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if left_strength > reformist_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
+on-arrival: workers_spd -= 1; unemployed_spd -= 1; liberal_strength += 5; liberal_dissent -= 5; soclib_dissent += 5; old_middle_spd += 5*(1-dissent); new_middle_spd -= 1; dvp_relation += 3*(1 - dissent);
 
-Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
+The pro-business message greatly expands our influence amongst both small and large business owners, the rest of our voter base, particularly the unionists and social liberals are much less enthused.
 
 @welfare
-on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
+on-arrival: workers_spd += 1*(1-dissent); new_middle_spd += 4*(1-dissent); unionist_strength += 3; unionist_dissent -= 4; industrial_dissent += 2;
 
-The reformist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+Union leaders are grateful at our reassurance of our commitment to the cause, the new middle class as a whole is also very appreciative.
 
 @democracy
-on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
+on-arrival: workers_spd += 1*(1-dissent); new_middle_spd += 3*(1-dissent); rural_spd += 1*(1-dissent); old_middle_spd += 4 if pro_republic >= 60;  new_middle_spd += 4 if pro_republic >= 60;
 
-Our speakers defend the republican system and rail against the monarchists and authoritarians who threaten it.
+Of course we shall defend democracy! Our speakers rail against the communists, monarchists, and all other authoritarians who oppose the republic.
 
-[? if democratization < 3 : Talk of democracy does not excite the workers as much as more practical issues. But that may change; part of our job is to provide political education to the proletariat. ?]
-[? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the workers are enthusiastic about our message. ?]
+[? pro_republic >= 60 : Due to the widespread popularity of the republic, our message resonations rather well with the middle classes. ?]
+[? pro_republic < 60 : We are able to rally our base, however, the low support of the republic makes expanding further much harder. ?]
 
 @pacifism
-on-arrival: pacifism += 1; nationalism -= 2*(1 - dissent); workers_spd += 4*(1 - dissent) if pacifism >= 3; unemployed_spd += 3*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; new_middle_spd += 4*(1-dissent) if pacifism >= 3
+on-arrival: nationalism -= 2*(1 - dissent); liberal_dissent += 3; soclib_dissent -= 4; workers_spd += 2*(1 - dissent); old_middle_spd -= 3; worker_spd += 2*(1-dissent) if soclib_strength > liberal_strength;  new_middle_spd += 2*(1-dissent) if soclib_strength > liberal_strength; 
 
-Our speakers denounce the military establishment and all the spending entering that black hole. Some adventurous speakers question the responsibility of the military elites in organizing the Great War.
+Many of our speakers denounce the military establishment, opposing further autonomy for the reichswehr.
 
-[? if pacifism < 3 : Given the volume of nationalist indoctrination in our society, it is difficult to argue so vehemently against the military. ?]
-[? if pacifism >= 3 : Since we have consistently made pacifism a theme of our campaign, the workers are enthusiastic about our message. ?]
+[? if soclib_strength > liberal_strength : Given the left-wing stances of our party, campaigning for pacifism has been made considerably more easy. ?]
+[? if soclib_strength <= liberal_strength : Our party contains many militarists, and the old middle class is not fond of our messaging. Still, we expand amongst pacifists. ?]
 
 @wtb
 view-if: wtb_adopted = 1
@@ -116,6 +116,6 @@ The WTB plan has become a popular rallying cry for our party. The workers are ea
 
 
 @local
-on-arrival: workers_spd += 3*(1-dissent); old_middle_spd += 1*(1-dissent); new_middle_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent);
+on-arrival: workers_spd += 1*(1-dissent); old_middle_spd += 2*(1-dissent); new_middle_spd += 3*(1-dissent); unemployed_spd += 1*(1-dissent);
 
-Our speakers have gauged the mood and are speaking to the issues that seem to most affect the workers in this moment.
+We focus on the pressing issues of the day, swaying a few voters over to our party.
